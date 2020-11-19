@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+
     <title>Portofolio</title>
 </head>
 
@@ -118,13 +118,70 @@
                             </div>
                         </div>
                         <!-- Qualities end -->
+
                     </div>
-                    <div class="flex-grow-2 image-banner">
+                    <div class="flex-grow-2 image-banner pb-0">
                         <img class="my-banner" src="assets/img/banner-1.png" alt="">
                     </div>
                 </div>
+                <div class="social p-6 pt-0" style="margin-top: -7px ;">
+                    <div class="card">
+                        <div class="row">
+                            <div class="column-2 text-center">
+                               <h1 class="text-primary m-0" style="position: relative;top: 50%;
+                               -webkit-transform: translateY(-50%);
+                               -ms-transform: translateY(-50%);
+                               transform: translateY(-50%);">Connect with me :</h1>
+                            </div>
+                            <div class="column-2">
+                                <!-- Social Network-->
+                                <div class="flex-wrap">
+                                    <div class="flex-grow-4">
+                                        <div class="text-center">
+                                            <a href="#">
+                                                <img title="Github" class="social-box circle-image" width="60"
+                                                    src="assets/img/github.svg" alt="Github">
+                                            </a>
+                                            <p class="text-primary m-0">Github</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-4">
+                                        <div class="text-center">
+                                            <a href="www.google.com">
+                                                <img title="Linkedin" class="social-box circle-image" width="60"
+                                                    src="assets/img/linkedin-logo.svg" alt="Linkedin">
+                                                    
+                                            </a>
+                                            <p class="text-primary m-0">Linkedin</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-4">
+                                        <div class="text-center">
+                                            <a href="#">
+                                                <img title="Gmail" class="social-box circle-image" width="60"
+                                                    src="assets/img/gmail.svg" alt="Gmail">
+                                            </a>
+                                            <p class="text-primary m-0">Gmail</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-4">
+                                        <div class="text-center">
+                                            <a href="#">
+                                                <img title="Wordpress" class="social-box circle-image" width="60"
+                                                    src="assets/img/wordpress-round-logo.svg" alt="Wordpress">
+                                            </a>
+                                            <p class="text-primary m-0">Wordpress</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Social Network Ends -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="flex-wrap experience" id="about">
+            <div class="flex-wrap pt-0 p-6" id="about">
                 <div class="card w-100 p-5">
                     <h3 class="card-title m-0">About Me <span> <img class="loading" src="assets/img/Ripple-1s-200px.gif"
                                 alt=""> </span></h3>
@@ -140,22 +197,30 @@
                         Cloud deployment. Looking forward to work in projects where I can leverage my knowledge and
                         skill to solve real life business problems.
                     </p>
-                    <audio controls>
-                        <source src="assets/audio/myporto.mp3" type="audio/wav">
-                    </audio>
+                    <div class="text-center">
+                        <div *ngIf="play" (click)="audioPlayer('play')">
+                            <img class="playAudio" src="assets/img/play-button.svg" alt="Play">
+                        </div>
+                        <div *ngIf="pause" (click)="audioPlayer('pause')">
+                            <img class="playAudio" src="assets/img/pause.gif" alt="Stop">
+                        </div>
+                    </div>
+                    
+                    
                 </div>
 
             </div>
-            <div class="flex-wrap experience" id="experience">
+            <div class="flex-wrap pt-0 p-6" id="experience">
                 <div class="card w-100 p-3">
                     <h3 class="card-title m-0">Work Experience <span> <img class="loading"
                                 src="assets/img/Ripple-1s-200px.gif" alt=""> </span></h3>
 
                     <div class="p-2">
-                        <h3>Walkterbeaconlab, Bengaluru - Software Development Engineer</h3>
+                        <h3>Walkterbeaconlab, Bengaluru - Software Development Engineer (07/2019 - Present)</h3>
                         <ul class="timeliner text-dark">
                             <li>
-                                <h4>Creation of live exam web application using Spring Boot, Thymeleaf, MySQL, JPA (07/2020 - Present)</h4>
+                                <h4>Creation of live exam web application using Spring Boot, Thymeleaf, MySQL, JPA
+                                    (07/2020 - Present)</h4>
                                 <ol>
                                     <li>
                                         <h5>sds</h5>
@@ -179,7 +244,7 @@
         <!-- Main Content end -->
 
     </div>
-    
+
 </body>
 
 </html>
