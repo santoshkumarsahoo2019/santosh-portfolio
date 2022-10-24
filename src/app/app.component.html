@@ -22,29 +22,29 @@
             <ul class="side-nav-menu">
                 <li>
                     <div class="side-nav-icon">
-                        <ion-icon name="information-circle-outline"></ion-icon>&nbsp;
+                        <img [src]="sidebarIcon.aboutMe" alt="About me">
                         <span class="nav-item-name">About Me</span>
                     </div>
                 </li>
                 <li>
                     <a href="#experience" class="text-primary" style="text-decoration: none;">
                         <div class="side-nav-icon">
-                            <ion-icon name="briefcase-outline"></ion-icon>
-                            <span class="nav-item-name">Work Experience</span>
+                            <img [src]="sidebarIcon.workExperience" alt="Work experience">
+                            <span class="nav-item-name">Work Experience</span> 
                         </div>
 
                     </a>
                 </li>
                 <li>
                     <div class="side-nav-icon">
-                        <ion-icon name="school-outline"></ion-icon>&nbsp;
+                        <img [src]="sidebarIcon.education" alt="Achievement">
                         <span class="nav-item-name">Education</span>
                     </div>
                 </li>
 
                 <li>
                     <div class="side-nav-icon">
-                        <ion-icon name="trophy-outline"></ion-icon>
+                        <img [src]="sidebarIcon.achievement" alt="Blog">
                         <span class="nav-item-name">Achievements</span>
                     </div>
                 </li>
@@ -55,7 +55,7 @@
                 </li>
                 <li>
                     <div class="side-nav-icon">
-                        <ion-icon name="home-outline"></ion-icon>
+                        <img [src]="sidebarIcon.home" alt="Home">
                         <span class="nav-item-name">Home</span>
                     </div>
                 </li>
@@ -244,7 +244,6 @@
         <!-- Main Content end -->
 
     </div>
-
 </body>
 
 </html>
