@@ -134,7 +134,11 @@ ul.side-nav-menu {
 }
 
 .side-nav-icon {
-    padding: 15px;
+    img{
+        width: 16px;
+        filter : invert(51%) sepia(95%) saturate(1010%) hue-rotate(155deg) brightness(94%) contrast(92%)
+    }
+    padding: 15px 15px 15px 20px;
     color: #0BB1E5;
     cursor: pointer;
     -webkit-transition: -webkit-transform .8s ease-in-out;

@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+
+import { SidebarIcons } from './shared/enums/icons.enums';
 
 @Component({
   selector: 'app-root',
@@ -9,16 +11,8 @@ export class AppComponent {
   title = 'portfolio';
   play: boolean = true;
   pause: boolean = false;
-
   audio: any = new Audio;
-
-  constructor() {
-
-  }
-
-  ngOnInit(): void {
-
-  }
+  sidebarIcon : SidebarIcons = new SidebarIcons()
 
   public audioPlayer(press: string) {
     if (press === "play") {
