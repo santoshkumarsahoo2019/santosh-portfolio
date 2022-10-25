@@ -1,0 +1,16 @@
+<div class="side-nav">
+    <div class="expand-side-nav">
+        <div class="side-nav-expand">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+        </div>
+    </div>
+
+    <ul class="side-nav-menu">
+        <li *ngFor="let tab of sidebarTabs">
+            <div class="side-nav-icon">
+                <img [src]="tab.icon" alt="About me">
+                <span class="nav-item-name">{{tab.tabName}}</span>
+            </div>
+    </ul>
+
+</div>

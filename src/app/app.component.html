@@ -1,67 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Portofolio</title>
-</head>
-
-<body>
     <div class="flex-container">
 
         <!-- Sidenav -->
-        <div class="side-nav">
-            <div class="expand-side-nav">
-                <div class="side-nav-expand">
-                    <ion-icon name="chevron-forward-outline"></ion-icon>
-                </div>
-            </div>
-
-            <ul class="side-nav-menu">
-                <li>
-                    <div class="side-nav-icon">
-                        <img [src]="sidebarIcon.aboutMe" alt="About me">
-                        <span class="nav-item-name">About Me</span>
-                    </div>
-                </li>
-                <li>
-                    <a href="#experience" class="text-primary" style="text-decoration: none;">
-                        <div class="side-nav-icon">
-                            <img [src]="sidebarIcon.workExperience" alt="Work experience">
-                            <span class="nav-item-name">Work Experience</span> 
-                        </div>
-
-                    </a>
-                </li>
-                <li>
-                    <div class="side-nav-icon">
-                        <img [src]="sidebarIcon.education" alt="Achievement">
-                        <span class="nav-item-name">Education</span>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="side-nav-icon">
-                        <img [src]="sidebarIcon.achievement" alt="Blog">
-                        <span class="nav-item-name">Achievements</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="side-nav-icon">
-                        <ion-icon name="newspaper-outline"></ion-icon> <span class="nav-item-name">Blog</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="side-nav-icon">
-                        <img [src]="sidebarIcon.home" alt="Home">
-                        <span class="nav-item-name">Home</span>
-                    </div>
-                </li>
-            </ul>
-
-        </div>
+        <sidebar [sidebarTabs]="sidebarConfiguration.sidebarTabs"></sidebar>
         <!-- SideNav end -->
 
         <!-- Main Content -->
@@ -69,7 +10,6 @@
             <div class="home-banner">
                 <div class="flex-wrap">
                     <div class="flex-grow-2">
-                        <!-- <h1 class="text-white fw-500 p-3 mb-0">Hi, I am Santosh <br> Welcome to My Portofolio</h1> -->
 
                         <h1 class="px-3">
                             <a href="" class="typewrite text-white" style="text-decoration: none;" data-period="2000"
@@ -186,7 +126,7 @@
                     <h3 class="card-title m-0">About Me <span> <img class="loading" src="assets/img/Ripple-1s-200px.gif"
                                 alt=""> </span></h3>
                     <p class="text-dark text-justify">
-                        My full name is <b>Santosh Kumar Sahoo</b>. I was born in 26/01/1998. I live in Puri,Odisha and
+                        My full name is <strong>Santosh Kumar Sahoo</strong>. I was born in 26/01/1998. I live in Puri,Odisha and
                         work in Bengaluru as a Software Developer/Web Developer. I’ve
                         been a professional developer for 1.5 year.
                         I’ve mostly worked professionally with JavaScript, Java, PHP and their frameworks
@@ -244,6 +184,3 @@
         <!-- Main Content end -->
 
     </div>
-</body>
-
-</html>
