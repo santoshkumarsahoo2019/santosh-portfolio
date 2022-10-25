@@ -1,0 +1,29 @@
+<div class="flex-wrap pt-0 p-6" id="about">
+    <div class="card w-100 p-5">
+        <h3 class="card-title m-0">About Me <span> <img class="loading" src="assets/img/Ripple-1s-200px.gif"
+                    alt=""> </span></h3>
+        <p class="text-dark text-justify">
+            My full name is <strong>Santosh Kumar Sahoo</strong>. I was born in 26/01/1998. I live in Puri,Odisha and
+            work in Bengaluru as a Software Developer/Web Developer. I’ve
+            been a professional developer for 1.5 year.
+            I’ve mostly worked professionally with JavaScript, Java, PHP and their frameworks
+            Angular,SpringBoot,Laravel.
+        </p>
+        <p class="text-dark text-justify">
+            Passionate about Java/PHP/JavaScript frontend and backend development, Database management and
+            Cloud deployment. Looking forward to work in projects where I can leverage my knowledge and
+            skill to solve real life business problems.
+        </p>
+        <div class="text-center">
+            <div *ngIf="play" (click)="audioPlayer('play')">
+                <img class="playAudio" src="assets/img/play-button.svg" alt="Play">
+            </div>
+            <div *ngIf="pause" (click)="audioPlayer('pause')">
+                <img class="playAudio" src="assets/img/pause.gif" alt="Stop">
+            </div>
+        </div>
+        
+        
+    </div>
+
+</div>
