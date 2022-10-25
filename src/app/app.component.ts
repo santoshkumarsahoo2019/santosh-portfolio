@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
+import { SidebarConfiguration } from './shared/component-config/sidebar-config';
 
-import { SidebarIcons } from './shared/enums/icons.enums';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +12,8 @@ export class AppComponent {
   play: boolean = true;
   pause: boolean = false;
   audio: any = new Audio;
-  sidebarIcon : SidebarIcons = new SidebarIcons()
+  // sidebarIcon : SidebarIcons = new SidebarIcons()
+  sidebarConfiguration : SidebarConfiguration = new SidebarConfiguration();
 
   public audioPlayer(press: string) {
     if (press === "play") {
