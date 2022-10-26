@@ -1,21 +1,9 @@
 
     <div class="flex-container">
-
         <!-- Sidenav -->
         <sidebar [sidebarTabs]="sidebarConfiguration.sidebarTabs"></sidebar>
         <!-- SideNav end -->
-
-        <!-- Main Content -->
-        <div class="main-content">
-
-            <home></home>
-
-            <about></about>
-            
-            <experience></experience>
-           
-        </div>
-
-        <!-- Main Content end -->
-
+    </div>
+    <div style="margin-left: 70px;">
+        <router-outlet></router-outlet>
     </div>

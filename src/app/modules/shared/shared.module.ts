@@ -1,7 +1,9 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
-import { AboutComponent } from "../about/about.component";
-import { HomeComponent } from "../home/home.component";
+import { AboutModule } from "../about/about.module";
+import { BlogModule } from "../blog/blog.module";
+import { ExperienceModule } from "../experience/experience.module";
+import { HomeModule } from "../home/home.module";
 import { SidebarComponent } from "./component/sidebar/sidebar.component";
 
 @NgModule({
@@ -9,7 +11,11 @@ import { SidebarComponent } from "./component/sidebar/sidebar.component";
         SidebarComponent
     ],
     imports : [
-        CommonModule
+        CommonModule,
+        // AboutModule,
+        // ExperienceModule,
+        // BlogModule,
+        // HomeModule
     ],
     exports : [
         SidebarComponent
