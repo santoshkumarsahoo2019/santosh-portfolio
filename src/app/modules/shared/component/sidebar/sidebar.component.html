@@ -6,7 +6,7 @@
 
     <ul class="side-nav-menu">
         <li *ngFor="let tab of sidebarTabs">
-            <div class="side-nav-icon">
+            <div class="side-nav-icon" [routerLink]="tab.route" >
                 <img [src]="tab.icon" alt="About me">
                 <span class="nav-item-name">{{tab.tabName}}</span>
             </div>

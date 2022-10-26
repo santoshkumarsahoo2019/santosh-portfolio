@@ -5,6 +5,7 @@ import { BlogModule } from "../blog/blog.module";
 import { ExperienceModule } from "../experience/experience.module";
 import { HomeModule } from "../home/home.module";
 import { SidebarComponent } from "./component/sidebar/sidebar.component";
+import { SharedRoutingModule } from "./shared-routing.module";
 
 @NgModule({
     declarations : [
@@ -16,6 +17,7 @@ import { SidebarComponent } from "./component/sidebar/sidebar.component";
         // ExperienceModule,
         // BlogModule,
         // HomeModule
+        SharedRoutingModule
     ],
     exports : [
         SidebarComponent
