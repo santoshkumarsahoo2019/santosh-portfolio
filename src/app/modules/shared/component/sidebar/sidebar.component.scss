@@ -1,0 +1,81 @@
+@import 'main';
+
+.side-nav {
+    height: 100vh;
+    padding: 5px;
+    width: 70px;
+    box-shadow: $box-shadow;
+    text-align: center;
+    position: fixed;
+    z-index: 2;
+    background-color: $background-colour;
+    overflow-x: hidden;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.side-nav:hover {
+    width: 200px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.side-nav:hover .side-nav-icon {
+    transform: rotate deg(180);
+}
+
+.nav-item-name {
+    display: none;
+    font-size: 13px;
+    -webkit-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+}
+
+.side-nav:hover .nav-item-name {
+    display: block;
+    -webkit-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+}
+
+ul.side-nav-menu {
+    padding: 0;
+    bottom: 0;
+}
+
+.side-nav-icon {
+    img{
+        width: 16px;
+        filter : $primary-filter
+    }
+    padding: 15px 15px 15px 20px;
+    color: $primary;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+.side-nav-icon:hover {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: 0.5s;
+}
+
+.side-nav-expand {
+    padding: 15px;
+    color: $primary;
+    cursor: pointer;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    transform-origin: 50% 50%;
+}
+
+.side-nav-expand:hover {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform-origin: 50% 50%;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}

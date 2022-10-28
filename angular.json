@@ -37,8 +37,13 @@
               }
             ],
             "styles": [
-              "src/assets/css/style.scss"
+              "src/assets/scss/main.scss"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/assets/scss/"
+              ]
+            },
             "scripts": [],
             "vendorChunk": true,
             "extractLicenses": false,

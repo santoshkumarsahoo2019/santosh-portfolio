@@ -1,0 +1,109 @@
+/* Flex Box */
+.flex-container {
+    display: flex;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.flex-grow-2 {
+    flex-grow: 2;
+    flex-basis: 0;
+    padding: 15px;
+}
+
+.flex-grow-4 {
+    flex-grow: 4;
+}
+
+.flex-grow-5 {
+    flex-grow: 5;
+}
+
+/* Column */
+.column-4{
+    flex: 25%;
+    max-width: 25%;
+    padding: 10px;
+}
+
+.column-2{
+    flex:50%;
+    max-width: 50%;
+
+}
+
+.column-3{
+    float: 33.33%;
+    max-width: 33.33%;
+}
+
+/* Row */
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+/* Padding */
+.p-1 {
+    padding: 5px;
+}
+
+.p-2 {
+    padding: 10px;
+}
+
+.p-3 {
+    padding: 15px;
+}
+
+.p-4 {
+    padding: 20px;
+}
+
+.p-5 {
+    padding: 25px;
+}
+
+.p-6 {
+    padding: 30px;
+}
+
+.pt-0{
+    padding-top: 0 !important;
+}
+
+.pb-0{
+    padding-bottom: 0 !important;
+}
+
+.px-3{
+    padding: 0px 15px;
+}
+
+.m-0{
+    margin: 0 !important;
+}
+
+.mb-0{
+    margin-bottom: 0 !important;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.v-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/***** Flex Box */
